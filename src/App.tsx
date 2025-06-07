@@ -18,7 +18,7 @@ function App() {
       <Header />
 
       <main className="my-16 space-y-15 text-zinc-800">
-        <div className="mx-16 max-w-3xl space-y-4">
+        <div className="mx-8 lg:mx-16 max-w-3xl space-y-4">
           <div className="flex gap-3">
             <img src={python} alt="Python" />
             <img src={aws} alt="AWS" />
@@ -37,12 +37,12 @@ function App() {
           </div>
         </div>
 
-        <section className="px-16 bg-zinc-50 py-6 space-y-6">
+        <section className="px-8 lg:px-16 bg-zinc-50 py-6 space-y-6">
           <h2 className="relative text-3xl font-bold before:content-['#'] before:absolute before:left-[-1.5rem] before:top-1/2 before:-translate-y-1/2 before:text-yellow-300 before:text-2xl">
             Sobre
           </h2>
 
-          <div className="flex items-start gap-16">
+          <div className="flex flex-col lg:flex-row items-start gap-16">
             <article className="bg-white px-5 py-4 min-w-96 max-w-lg shadow-sm rounded-md">
               <h3 className="text-xl font-bold mb-4 flex items-baseline gap-1">
                 <span className="block h-1 w-2 bg-zinc-300"></span>

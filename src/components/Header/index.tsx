@@ -33,7 +33,12 @@ export function Header() {
         <div className="grid place-items-center fixed inset-0 bg-zinc-900/50 z-10" onClick={() => setIsMenuOpen(false)}>
           <div className="bg-white min-w-36 w-max p-4 rounded-md">
             <div className="flex justify-end mb-4">
-              <Cross2Icon className="w-4 h-4 cursor-pointer" />
+              <button
+                className="cursor-pointer text-zinc-500 hover:text-zinc-800 focus:outline-none"
+                aria-label="Fechar"
+              >
+                <Cross2Icon className="w-5 h-5" />
+              </button>
             </div>
             <MenuItems orientation="vertical" />
           </div>

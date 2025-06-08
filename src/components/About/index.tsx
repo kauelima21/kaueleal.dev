@@ -1,6 +1,8 @@
-import { ExternalLinkIcon } from '@radix-ui/react-icons';
+import { Cross2Icon, ExternalLinkIcon } from '@radix-ui/react-icons';
 import { useState } from 'react';
 import { Button } from '../Button';
+import * as Dialog from '@radix-ui/react-dialog';
+import { Form } from '../Form';
 
 export function About() {
   const [qualifications] = useState([
@@ -35,7 +37,7 @@ export function About() {
           <span className="block h-1 w-2 bg-zinc-300"></span>
           Quem sou eu?
         </h3>
-        <div className="space-y-2 mb-6">
+        <div className="space-y-2 mb-6 text-md">
           <p>
             Sou desenvolvedor Full Stack com forte atuação em arquitetura Serverless na AWS. Tenho experiência sólida
             com Angular no Front-end e Python no Back-end, utilizando serviços como Lambda, DynamoDB, API Gateway e Step
@@ -52,7 +54,27 @@ export function About() {
             problemas de forma eficiente e prática.
           </p>
         </div>
-        <Button>Entrar em contato</Button>
+        <Dialog.Root>
+          <Dialog.Trigger asChild>
+            <Button>Entrar em contato</Button>
+          </Dialog.Trigger>
+          <Dialog.Portal>
+            <Dialog.Overlay className="fixed inset-0 bg-black/40 z-50" />
+            <Dialog.Content className="fixed left-1/2 top-1/2 z-50 -translate-x-1/2 -translate-y-1/2 bg-white rounded-lg shadow-lg p-8 w-full max-w-md focus:outline-none">
+              <Dialog.Close asChild>
+                <button
+                  className="cursor-pointer absolute top-4 right-4 text-zinc-500 hover:text-zinc-800 focus:outline-none"
+                  aria-label="Fechar"
+                >
+                  <Cross2Icon className="w-5 h-5" />
+                </button>
+              </Dialog.Close>
+              <Form />
+              <Dialog.Title className="sr-only">Formulário de contato</Dialog.Title>
+              <Dialog.Description className="sr-only">Formulário de contato</Dialog.Description>
+            </Dialog.Content>
+          </Dialog.Portal>
+        </Dialog.Root>
       </article>
 
       <article className="bg-white px-5 py-4 max-w-lg shadow-sm rounded-md">

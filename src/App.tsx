@@ -1,5 +1,6 @@
 import { Button } from './components/Button';
 import { Header } from './components/Header';
+import { Cross2Icon } from '@radix-ui/react-icons';
 
 import python from './assets/python.svg';
 import aws from './assets/aws.svg';
@@ -11,6 +12,8 @@ import angular from './assets/angular.svg';
 
 import { Footer } from './components/Footer';
 import { About } from './components/About';
+import * as Dialog from '@radix-ui/react-dialog';
+import { Form } from './components/Form';
 
 function App() {
   return (
@@ -35,7 +38,27 @@ function App() {
             <a href="assets/Kaue Leal de Lima - CV.pdf" download>
               <Button>Baixar CV</Button>
             </a>
-            <Button variant="secondary">Entrar em contato</Button>
+            <Dialog.Root>
+              <Dialog.Trigger asChild>
+                <Button variant="secondary">Entrar em contato</Button>
+              </Dialog.Trigger>
+              <Dialog.Portal>
+                <Dialog.Overlay className="fixed inset-0 bg-black/40 z-50" />
+                <Dialog.Content className="fixed left-1/2 top-1/2 z-50 -translate-x-1/2 -translate-y-1/2 bg-white rounded-lg shadow-lg p-4 md:p-8 w-full max-w-md focus:outline-none">
+                  <Dialog.Close asChild>
+                    <button
+                      className="cursor-pointer absolute top-4 right-4 text-zinc-500 hover:text-zinc-800 focus:outline-none"
+                      aria-label="Fechar"
+                    >
+                      <Cross2Icon className="w-5 h-5" />
+                    </button>
+                  </Dialog.Close>
+                  <Form />
+                  <Dialog.Title className="sr-only">Formulário de contato</Dialog.Title>
+                  <Dialog.Description className="sr-only">Formulário de contato</Dialog.Description>
+                </Dialog.Content>
+              </Dialog.Portal>
+            </Dialog.Root>
           </div>
         </div>
 

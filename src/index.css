@@ -3,3 +3,7 @@
 @theme {
   --font-display: "JetBrains Mono", "sans-serif"; 
 }
+
+html {
+  scroll-behavior: smooth;
+}

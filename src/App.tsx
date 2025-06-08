@@ -39,7 +39,7 @@ function App() {
           </div>
         </div>
 
-        <section className="px-8 lg:px-16 bg-zinc-50 py-6 space-y-6">
+        <section id="about" className="px-8 lg:px-16 bg-zinc-50 py-6 space-y-6">
           <h2 className="relative text-3xl font-bold before:content-['#'] before:absolute before:left-[-1.5rem] before:top-1/2 before:-translate-y-1/2 before:text-yellow-300 before:text-2xl">
             Sobre
           </h2>

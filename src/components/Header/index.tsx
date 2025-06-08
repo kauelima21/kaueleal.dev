@@ -1,8 +1,8 @@
 import { RowsIcon, Cross2Icon } from '@radix-ui/react-icons';
 import { Logo } from '../Logo';
 import { SocialLinks } from '../SocialLinks';
-import { useState } from 'react';
 import { MenuItems } from './MenuItems';
+import { useState } from 'react';
 
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);

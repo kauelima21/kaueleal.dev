@@ -14,7 +14,7 @@ import { About } from './components/About';
 
 function App() {
   return (
-    <>
+    <div id="home">
       <Header />
 
       <main className="my-16 space-y-15 text-zinc-800">
@@ -29,7 +29,7 @@ function App() {
             <img src={angular} alt="Angular" />
           </div>
 
-          <h1 className="text-6xl font-display">Full-stack Web & Serverless Developer</h1>
+          <h1 className="text-5xl md:text-6xl font-display">Full Stack Web & Serverless Developer</h1>
 
           <div className="flex gap-4 mt-6">
             <a href="assets/Kaue Leal de Lima - CV.pdf" download>
@@ -39,7 +39,7 @@ function App() {
           </div>
         </div>
 
-        <section id="about" className="px-8 lg:px-16 bg-zinc-50 py-6 space-y-6">
+        <section id="about" className="scroll-mt-20 px-8 lg:px-16 bg-zinc-50 py-6 space-y-6">
           <h2 className="relative text-3xl font-bold before:content-['#'] before:absolute before:left-[-1.5rem] before:top-1/2 before:-translate-y-1/2 before:text-yellow-300 before:text-2xl">
             Sobre
           </h2>
@@ -49,7 +49,7 @@ function App() {
       </main>
 
       <Footer />
-    </>
+    </div>
   );
 }
 

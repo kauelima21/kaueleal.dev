@@ -9,8 +9,10 @@ export function Header() {
 
   return (
     <>
-      <header className="flex items-center justify-between py-4 lg:py-6 px-8 lg:px-16 shadow-sm text-zinc-800">
-        <Logo />
+      <header className="flex items-center justify-between py-4 lg:py-6 px-8 lg:px-16 shadow-sm text-zinc-800 sticky top-0 left-0 w-full bg-white z-50">
+        <a href="#home">
+          <Logo />
+        </a>
 
         <div className="hidden md:block">
           <MenuItems />

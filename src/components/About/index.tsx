@@ -39,15 +39,25 @@ export function About() {
         </h3>
         <div className="space-y-2 mb-6 text-md">
           <p>
-            Sou desenvolvedor Full Stack com forte atuação em arquitetura Serverless na AWS. Tenho experiência sólida
-            com Angular no Front-end e Python no Back-end, utilizando serviços como Lambda, DynamoDB, API Gateway e Step
-            Functions.
+            Sou desenvolvedor Full Stack com forte atuação em arquitetura Serverless na{' '}
+            <a href="https://aws.amazon.com/" target="_blank" className="font-medium marked">
+              AWS
+            </a>
+            . Tenho experiência sólida com Angular no Front-end e Python no Back-end, utilizando serviços como Lambda,
+            DynamoDB, API Gateway e Step Functions.
           </p>
           <p>
             Atuo em ambientes de Cloud Computing, sempre seguindo boas práticas de desenvolvimento e colaborando com
-            times ágeis. Tenho conhecimento em pipelines de CI/CD e já trabalhei com ferramentas como GitHub Actions
+            times ágeis. Tenho conhecimento em pipelines de CI/CD e já trabalhei com ferramentas como{' '}
+            <a href="https://github.com/features/actions" target="_blank" className="font-medium marked">
+              GitHub Actions
+            </a>
             para automação de deploys. Também possuo experiência com infraestrutura como código (IaC), especialmente
-            utilizando o Serverless Framework.
+            utilizando o{' '}
+            <a href="https://www.serverless.com/" target="_blank" className="font-medium marked">
+              Serverless Framework
+            </a>
+            .
           </p>
           <p>
             Sou movido por desafios e tenho um perfil analítico, com raciocínio lógico apurado e foco em resolver

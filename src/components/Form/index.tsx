@@ -9,10 +9,7 @@ export function Form() {
   return (
     <form onSubmit={handleSubmit} className="flex flex-col gap-4">
       <h2 className="text-2xl font-bold">
-        Entre em{' '}
-        <span className="relative before:content-[''] before:z-[-1] before:absolute before:bottom-0 before:h-2 before:w-full before:bg-yellow-300">
-          contato
-        </span>
+        Entre em <span className="marked">contato</span>
       </h2>
 
       <label htmlFor="name" className="flex flex-col gap-2">

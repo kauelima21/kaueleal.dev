@@ -7,3 +7,7 @@
 html {
   scroll-behavior: smooth;
 }
+
+.marked {
+  @apply relative z-0 before:content-[''] before:z-[-1] before:absolute before:bottom-0 before:h-2 before:w-full before:bg-yellow-300;
+}
